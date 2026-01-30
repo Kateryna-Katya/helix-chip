@@ -1,56 +1,321 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/helix-chip/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <script type="module" crossorigin src="/helix-chip/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/helix-chip/assets/styles-guStct1H.css">
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helix Chip — AI для обычных людей</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='32' height='32' rx='4' fill='%231A1A1A'/%3E%3Cpath d='M10 10H16V16H10V10Z' fill='%23E07A5F'/%3E%3Cpath d='M16 16H22V22H16V16Z' fill='%23F5F5DC'/%3E%3C/svg%3E" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script type="module" crossorigin src="/helix-chip/assets/main-DGnaoQup.js"></script>
+    <link rel="stylesheet" crossorigin href="/helix-chip/assets/main-7Y3qTvKt.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
+  <nav class="container nav">
+      <a href="./#hero" class="logo">
+          <span class="logo__dot"></span>
+          Helix-Chip
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
+      <ul class="nav__list">
+          <li><a href="./#hero" class="nav__link">Главная</a></li>
+          <li><a href="./#about" class="nav__link">О платформе</a></li>
+          <li><a href="./#benefits" class="nav__link">Преимущества</a></li>
+          <li><a href="./#innovations" class="nav__link">Инновации</a></li>
+          <li><a href="./#blog" class="nav__link">Практики</a></li>
       </ul>
-    </nav>
-  </div>
+      <a href="./#contact" class="btn btn--header">Начать</a>
+      <button class="burger" aria-label="Menu">
+          <span></span>
+      </button>
+  </nav>
 </header>
+<div class="mobile-menu" id="mobile-menu">
+  <div class="mobile-menu__content">
+      <ul class="mobile-menu__list">
+          <li><a href="./#hero" class="mobile-menu__link">Главная</a></li>
+          <li><a href="./#about" class="mobile-menu__link">О платформе</a></li>
+          <li><a href="./#benefits" class="mobile-menu__link">Преимущества</a></li>
+          <li><a href="./#innovations" class="mobile-menu__link">Инновации</a></li>
+          <li><a href="./#blog" class="mobile-menu__link">Практики</a></li>
+          <li><a href="./#contact" class="mobile-menu__link">Начать</a></li>
+      </ul>
+  </div>
+</div>
 
-
-    <main>
+    <main id="main-content">
       <!-- Loads the specified .html file -->
-      
+      <section class="hero" id="hero">
+  <div class="hero__sticky-wrapper">
+      <div class="hero__bg-canvas" id="canvas-bg"></div>
+      <div class="hero__overlay"></div>
+  </div>
+
+  <div class="container hero__content">
+      <div class="hero__inner">
+          <div class="hero__label">Технология нового поколения</div>
+          <h1 class="hero__title" id="hero-title">AI-инструменты для реальных задач</h1>
+          <p class="hero__subtitle">
+              Решения, которые меняют правила игры. Легко разобраться без опыта. Быстрый и лёгкий старт в мире прикладного интеллекта.
+          </p>
+          <div class="hero__actions">
+              <a href="#contact" class="btn btn--primary">Начать сейчас</a>
+              <a href="#about" class="btn btn--secondary">Получить больше информации</a>
+          </div>
+      </div>
+  </div>
+</section>
+<section class="about" id="about">
+  <div class="container">
+      <div class="about__header">
+          <span class="about__tag">Платформа года</span>
+          <h2 class="about__title">Переосмыслите подход к развитию</h2>
+          <p class="about__lead">Платформа уже доступна в Европе. Мы создали пространство, где сложные AI-алгоритмы превращаются в понятные инструменты для жизни и карьеры.</p>
+      </div>
+
+      <div class="about__grid">
+          <div class="about__card">
+              <div class="about__card-number">01</div>
+              <h3 class="about__card-title">Для реальных задач</h3>
+              <p class="about__card-text">Методологии, доказавшие эффективность в быту и бизнесе. Никакой лишней теории — только прикладные навыки.</p>
+              <div class="about__card-line"></div>
+          </div>
+
+          <div class="about__card">
+              <div class="about__card-number">02</div>
+              <h3 class="about__card-title">Быстрый старт</h3>
+              <p class="about__card-text">Подключение занимает 2 минуты. Удобная адаптация без сложностей даже для тех, кто никогда не работал с ИИ.</p>
+              <div class="about__card-line"></div>
+          </div>
+
+          <div class="about__card">
+              <div class="about__card-number">03</div>
+              <h3 class="about__card-title">Статус в ЕС</h3>
+              <p class="about__card-text">Предложение активно только в странах ЕС. Мы соблюдаем высшие стандарты безопасности и этики ИИ.</p>
+              <div class="about__card-line"></div>
+          </div>
+      </div>
+  </div>
+</section>
+<section class="benefits" id="benefits">
+  <div class="container">
+      <div class="benefits__row">
+          <div class="benefits__text-content">
+              <span class="benefits__num">01.</span>
+              <h2 class="benefits__title">Стратегия роста на базе инноваций</h2>
+              <p class="benefits__description">
+                  Мы предлагаем не просто теорию, а технологию для пассивного дохода и автоматизации рутины. Наши инструменты адаптируются под ваши цели, расширяя горизонты проекта.
+              </p>
+              <ul class="benefits__list">
+                  <li><i data-lucide="check-circle"></i> Проверенный партнер в ЕС</li>
+                  <li><i data-lucide="check-circle"></i> Интеграция за считанные минуты</li>
+              </ul>
+          </div>
+          <div class="benefits__visual">
+              <div class="benefits__shape benefits__shape--1"></div>
+              <div class="benefits__image-placeholder">AI-STRATEGY</div>
+          </div>
+      </div>
+
+      <div class="benefits__row benefits__row--reverse">
+          <div class="benefits__text-content">
+              <span class="benefits__num">02.</span>
+              <h2 class="benefits__title">Экспертная поддержка на всех этапах</h2>
+              <p class="benefits__description">
+                  Ваш путь в мир ИИ не будет одиночным. Мы предоставляем методологии, доказавшие эффективность, и сопровождаем вас от первой настройки до получения результатов.
+              </p>
+              <a href="#contact" class="btn btn--secondary">Бесплатная консультация</a>
+          </div>
+          <div class="benefits__visual">
+              <div class="benefits__shape benefits__shape--2"></div>
+              <div class="benefits__image-placeholder">SUPPORT-HUB</div>
+          </div>
+      </div>
+  </div>
+</section>
+<section class="innovations" id="innovations">
+  <div class="container">
+      <div class="innovations__header">
+          <span class="about__tag">Технологии будущего</span>
+          <h2 class="benefits__title">Решения, которые меняют правила игры</h2>
+      </div>
+
+      <div class="innovations__list">
+          <div class="inv-item" data-info="Нейросети, адаптированные под повседневные задачи обычного человека.">
+              <div class="inv-item__main">
+                  <span class="inv-item__num">/01</span>
+                  <h3 class="inv-item__name">Передовая цифровая инфраструктура</h3>
+                  <i data-lucide="arrow-up-right" class="inv-item__icon"></i>
+              </div>
+              <div class="inv-item__details">Платформа года для масштабирования ваших идей.</div>
+          </div>
+
+          <div class="inv-item" data-info="Автоматизация, которая не требует навыков программирования.">
+              <div class="inv-item__main">
+                  <span class="inv-item__num">/02</span>
+                  <h3 class="inv-item__name">Технологии, которые работают на вас</h3>
+                  <i data-lucide="arrow-up-right" class="inv-item__icon"></i>
+              </div>
+              <div class="inv-item__details">Инструменты для создания пассивного дохода и экономии времени.</div>
+          </div>
+
+          <div class="inv-item" data-info="Безопасное хранение и обработка данных на серверах в Германии.">
+              <div class="inv-item__main">
+                  <span class="inv-item__num">/03</span>
+                  <h3 class="inv-item__name">Локальная экосистема в ЕС</h3>
+                  <i data-lucide="arrow-up-right" class="inv-item__icon"></i>
+              </div>
+              <div class="inv-item__details">Полное соответствие стандартам безопасности Европы.</div>
+          </div>
+      </div>
+  </div>
+</section>
+<section class="blog" id="blog">
+  <div class="container">
+      <div class="blog__header">
+          <span class="about__tag">Практики, применимые уже сегодня</span>
+          <h2 class="benefits__title">Пошаговый путь к AI-грамотности</h2>
+      </div>
+
+      <div class="blog__grid">
+          <article class="blog__item blog__item--featured">
+              <div class="blog__item-content">
+                  <span class="blog__category">Карьера</span>
+                  <h3 class="blog__item-title">Постройте карьеру, которая работает на вас: роль ИИ в 2026 году</h3>
+                  <p class="blog__item-excerpt">Как делегировать 70% рутины нейросетям и сфокусироваться на стратегии.</p>
+              </div>
+              <div class="blog__item-footer">
+                  <span class="blog__time">5 мин чтения</span>
+                  <a href="#contact" class="blog__more">Читать полностью →</a>
+              </div>
+          </article>
+
+          <article class="blog__item">
+              <div class="blog__item-content">
+                  <span class="blog__category">Быт</span>
+                  <h3 class="blog__item-title">AI-инструменты для реальных задач: планируем бюджет</h3>
+              </div>
+              <div class="blog__item-footer">
+                  <a href="#contact" class="blog__more">Подробнее</a>
+              </div>
+          </article>
+
+          <article class="blog__item">
+              <div class="blog__item-content">
+                  <span class="blog__category">Инновации</span>
+                  <h3 class="blog__item-title">Технология для пассивного дохода: миф или реальность?</h3>
+              </div>
+              <div class="blog__item-footer">
+                  <a href="#contact" class="blog__more">Узнать детали</a>
+              </div>
+          </article>
+
+          <article class="blog__item blog__item--wide">
+              <div class="blog__item-content">
+                  <span class="blog__category">Гайд</span>
+                  <h3 class="blog__item-title">Воплотите мечты в реальность: пошаговый запуск первого AI-проекта без кода</h3>
+              </div>
+              <div class="blog__item-footer">
+                  <a href="#contact" class="blog__more">Начать обучение</a>
+              </div>
+          </article>
+      </div>
+  </div>
+</section>
+<section class="contact" id="contact">
+  <div class="container contact__grid">
+      <div class="contact__info">
+          <span class="about__tag">Связь с нами</span>
+          <h2 class="benefits__title">Запросить доступ к платформе</h2>
+          <p class="contact__text">
+              Оставьте заявку, и наш специалист свяжется с вами для бесплатной консультации по всем вопросам внедрения AI.
+          </p>
+          <div class="contact__meta">
+              <p><strong>Режим работы:</strong> Пн-Пт, 09:00 — 18:00 (Берлин)</p>
+              <p>Поддержка по всем вопросам доступна в Европе.</p>
+          </div>
+      </div>
+
+      <form class="form" id="ai-form">
+          <div class="form__group">
+              <input type="text" name="name" class="form__input" placeholder="Ваше имя" required>
+          </div>
+
+          <div class="form__group">
+              <input type="email" name="email" class="form__input" placeholder="Email" required>
+          </div>
+
+          <div class="form__group">
+              <input type="tel" name="phone" id="phone-input" class="form__input" placeholder="Телефон (только цифры)" required>
+              <small class="form__error" id="phone-error">Допускаются только цифры</small>
+          </div>
+
+          <div class="form__captcha">
+              <label class="form__label">Подтвердите, что вы не робот: <span id="captcha-question"></span></label>
+              <input type="number" id="captcha-answer" class="form__input" placeholder="Ваш ответ" required>
+          </div>
+
+          <div class="form__checkbox">
+              <input type="checkbox" id="agree" required>
+              <label for="agree">Я согласен на обработку персональных данных</label>
+          </div>
+
+          <button type="submit" class="btn btn--primary form__submit">Начать сейчас</button>
+
+          <div id="form-message" class="form__message"></div>
+      </form>
+  </div>
+</section>
     </main>
 
     <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+  <div class="container footer__grid">
+      <div class="footer__col">
+          <a href="./#hero" class="logo logo--footer">Helix-Chip</a>
+          <p class="footer__tagline">Технологии, которые работают на вас.</p>
+          <div class="footer__contacts">
+              <a href="tel:+493083914172" class="footer__link"><i data-lucide="phone" size="16"></i> +49 30 83914172</a>
+              <a href="mailto:hello@helix-chip.blog" class="footer__link"><i data-lucide="mail" size="16"></i> hello@helix-chip.blog</a>
+              <p class="footer__address"><i data-lucide="map-pin" size="16"></i> Friedrichstraße 100, 10117 Berlin, Germany</p>
+          </div>
+      </div>
+      <div class="footer__col">
+          <h4 class="footer__title">Навигация</h4>
+          <ul class="footer__menu">
+              <li><a href="./#about">О платформе</a></li>
+              <li><a href="./#benefits">Преимущества</a></li>
+              <li><a href="./#innovations">Инновации</a></li>
+              <li><a href="./#blog">Практики</a></li>
+          </ul>
+      </div>
+      <div class="footer__col">
+          <h4 class="footer__title">Юридическая информация</h4>
+          <ul class="footer__menu">
+              <li><a href="./privacy.html">Privacy Policy</a></li>
+              <li><a href="./cookies.html">Cookie Policy</a></li>
+              <li><a href="./terms.html">Terms of Use</a></li>
+              <li><a href="./return.html">Return Policy</a></li>
+              <li><a href="./disclaimer.html">Disclaimer</a></li>
+              <li><a href="./personal-data-policy.html">Personal Data</a></li>
+              <li><a href="./contact.html">Contact Us</a></li>
+          </ul>
+      </div>
+  </div>
+  <div class="container footer__bottom">
+      <p>&copy; 2026 Helix-Chip. Все права защищены. Предложение активно только в странах ЕС.</p>
   </div>
 </footer>
-
-
+    <div class="cookie-popup" id="cookie-popup">
+      <div class="cookie-popup__content">
+          <p class="cookie-popup__text">
+              Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.html">Cookie политике</a>.
+          </p>
+          <button class="btn btn--primary btn--sm" id="cookie-accept">Принять</button>
+      </div>
+  </div>
   </body>
 </html>
