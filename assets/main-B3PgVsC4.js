@@ -4,4 +4,4 @@
                           <p>Мы свяжемся с вами в ближайшее время.</p>
                       </div>
                   `,i.style.opacity="1"},300)},1800)});const m=document.getElementById("cookie-popup"),h=document.getElementById("cookie-accept");m&&!localStorage.getItem("cookies_accepted")&&setTimeout(()=>{m.classList.add("active")},3e3),h&&h.addEventListener("click",()=>{localStorage.setItem("cookies_accepted","true"),m.classList.remove("active")}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(o){o.preventDefault();const r=document.querySelector(this.getAttribute("href"));r&&r.scrollIntoView({behavior:"smooth"})})})});
-//# sourceMappingURL=main-DGnaoQup.js.map
+//# sourceMappingURL=main-B3PgVsC4.js.map
