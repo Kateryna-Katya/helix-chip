@@ -1,19 +1,31 @@
 <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
+  <nav class="container nav">
+      <a href="./#hero" class="logo">
+          <span class="logo__dot"></span>
+          Helix-Chip
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
+      <ul class="nav__list">
+          <li><a href="./#hero" class="nav__link">Главная</a></li>
+          <li><a href="./#about" class="nav__link">О платформе</a></li>
+          <li><a href="./#benefits" class="nav__link">Преимущества</a></li>
+          <li><a href="./#innovations" class="nav__link">Инновации</a></li>
+          <li><a href="./#blog" class="nav__link">Практики</a></li>
       </ul>
-    </nav>
-  </div>
+      <a href="./#contact" class="btn btn--header">Начать</a>
+      <button class="burger" aria-label="Menu">
+          <span></span>
+      </button>
+  </nav>
 </header>
+<div class="mobile-menu" id="mobile-menu">
+  <div class="mobile-menu__content">
+      <ul class="mobile-menu__list">
+          <li><a href="./#hero" class="mobile-menu__link">Главная</a></li>
+          <li><a href="./#about" class="mobile-menu__link">О платформе</a></li>
+          <li><a href="./#benefits" class="mobile-menu__link">Преимущества</a></li>
+          <li><a href="./#innovations" class="mobile-menu__link">Инновации</a></li>
+          <li><a href="./#blog" class="mobile-menu__link">Практики</a></li>
+          <li><a href="./#contact" class="mobile-menu__link">Начать</a></li>
+      </ul>
+  </div>
+</div>
